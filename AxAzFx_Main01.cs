@@ -1,3 +1,8 @@
+/*
+Author: ]<äf.
+[jcaf@127 AZiot_AZFx_AZPA_jc01]$ git config --global user.email "firwar21@gmail.com"
+[jcaf@127 AZiot_AZFx_AZPA_jc01]$ git config --global user.name "jcaf"
+*/
 using System;
 using System.IO;
 using System.Threading.Tasks;
@@ -78,8 +83,8 @@ namespace Company.Function
 
 
             client = ServiceClient.CreateFromConnectionString(connString);
-            //CloudToDeviceMethod method = new CloudToDeviceMethod("stop");
             CloudToDeviceMethod method = new CloudToDeviceMethod("start");
+            //CloudToDeviceMethod method = new CloudToDeviceMethod("start");
             //CloudToDeviceMethod method = new CloudToDeviceMethod(firstname);
             
             method.ResponseTimeout = TimeSpan.FromSeconds(30);//15
